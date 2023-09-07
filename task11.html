@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(41,50,65)
+;
+        }
+        input[type=text],input[type=email],input[type=password],input[type=tel],#m,select,input[type=number],textarea{
+            margin-left: 70px;
+            width: 200px;
+            height: 20px;
+        }
+        label{
+            font-size: 18px;
+            line-height: 30px;
+            color: white;
+        }
+        div{
+            margin-left: 32%;
+            margin-top: 200px;
+            background-color:  rgb(43, 22, 45);
+            width: 30%;
+            padding: 50px;
+            opacity: 0.8;
+            border: 3px white solid;
+            border-radius: 5px;
+        }
+        button{
+            height: 50px;
+            width: 400px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+        button:hover{
+            background-color: gray;
+
+        }
+    </style>
+</head>
+<body>
+    <div clss="c1">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="your name"><br>
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" placeholder="your email"><br>
+            <label for="pswd">Password:</label>
+            <input type="password" name="pswd" style="margin-left: 45px;"><br>
+            <label for="pn">Phone Number:</label>
+            <input type="tel" name="pn" style="margin-left: 6px;"><br>
+            <label for="gender">Gender:</label>
+            <span id="m">Male:</span>
+            <input type="radio" name="gender" value="male" >
+            <span>Female:</span>
+            <input type="radio" name="gender" value="female">
+            <span>Others:</span>
+            <input type="radio" name="gender" value="others"><br>
+            <label for="lan">Language:</label>
+            <select name="lan" style="margin-left: 45px;">
+                <option value="Telugu">Telugu</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Kannada">Kannada</option>
+                <option value="Malayalam">Malayalam</option>
+                <option value="Hindi">Hindi</option>
+            </select><br>
+            <label for="zpcd">Zipcode:</label>
+            <input type="number" name="zpcd" style="margin-left: 56px;"><br>
+            <label for="abt">About:</label>
+            <textarea name="abt" rows="1" placeholder="write about yourself...."></textarea><br>
+            <button>Register</button>
+
+        </form>
+    </div>
+</body>
+</html>
